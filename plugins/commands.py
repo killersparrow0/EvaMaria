@@ -60,16 +60,16 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
+                    "𝙅𝙊𝙄𝙉 𝙉𝙊𝙒✅️", url=invite_link.invite_link
                 )
             ]
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
+            btn.append([InlineKeyboardButton("𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉🔄", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**𝙔𝙤𝙪 𝙉𝙚𝙚𝙙 𝙏𝙤 𝙅𝙤𝙞𝙣 𝙈𝙮 𝘾𝙝𝙖𝙩 𝙁𝙤𝙧 𝙂𝙚𝙩𝙩𝙞𝙣𝙜 𝙏𝙝𝙞𝙨 𝙁𝙞𝙡𝙚 𝙎𝙤 𝙆𝙞𝙣𝙙𝙡𝙮 𝙅𝙤𝙞𝙣 !!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
