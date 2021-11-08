@@ -671,7 +671,8 @@ async def advantage_spell_chok(msg):
                 )
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data='close_data')])
-    m = await msg.reply("𝙉𝙤𝙩 𝙖𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙍𝙞𝙜𝙝𝙩 𝙉𝙤𝙬\n𝙋𝙤𝙨𝙨𝙞𝙗𝙡𝙚 𝘾𝙖𝙪𝙨𝙚𝙨 : 🤔\n\n⭕️ Not released yet\n⭕️ Search in Google for correct spelling\n[Click Here to Search in Google](www.google.com)\n⭕️Dont use Symbols\n⭕ Asking theatre prints\n⭕ Not in Database")buttons= [[
+    m = await msg.reply("𝙉𝙤𝙩 𝙖𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙍𝙞𝙜𝙝𝙩 𝙉𝙤𝙬\n𝙋𝙤𝙨𝙨𝙞𝙗𝙡𝙚 𝘾𝙖𝙪𝙨𝙚𝙨 : 🤔\n\n⭕️ Not released yet\n⭕️ Search in Google for correct spelling\n[Click Here to Search in Google](www.google.com)\n⭕️Dont use Symbols\n⭕ Asking theatre prints\n⭕ Not in Database")
+    buttons= [[
     InlineKeyboardButton('🎬Movie Updates', url='https://t.me/Mc_Movie_updates'),
     await asyncio.sleep(20)
     await m.delete()
