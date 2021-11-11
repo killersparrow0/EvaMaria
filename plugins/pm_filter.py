@@ -354,7 +354,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         f_caption=files.caption
         if CUSTOM_FILE_CAPTION:
             try:
-                f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
+                f_caption=CUSTOM_FILE_CAPTION.format(def get_reply_markup(query):
+    buttons = [
+        [
+            InlineKeyboardButton('SEARCH AGAIN', switch_inline_query_current_chat=query)],
+            [InlineKeyboardButton('SEARCH MOVIES', switch_inline_query_current_chat=""),
+        ]
+        ]
+    return InlineKeyboardMarkup(buttons)
             except Exception as e:
                 print(e)
             f_caption=f_caption
