@@ -69,7 +69,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton("𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉🔄", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**𝙔𝙤𝙪 𝙉𝙚𝙚𝙙 𝙏𝙤 𝙅𝙤𝙞𝙣 𝙈𝙮 𝘾𝙝𝙖𝙩 𝙁𝙤𝙧 𝙂𝙚𝙩𝙩𝙞𝙣𝙜 𝙏𝙝𝙞𝙨 𝙁𝙞𝙡𝙚 𝙎𝙤 𝙆𝙞𝙣𝙙𝙡𝙮 𝙅𝙤𝙞𝙣 !!**",
+            text="**𝙔𝙤𝙪 𝙉𝙚𝙚𝙙 𝙏𝙤 𝙅𝙤𝙞𝙣 𝙈𝙮 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙁𝙤𝙧 𝙂𝙚𝙩𝙩𝙞𝙣𝙜 𝙏𝙝𝙞𝙨 𝙁𝙞𝙡𝙚 𝙎𝙤 𝙆𝙞𝙣𝙙𝙡𝙮 𝙅𝙤𝙞𝙣 !!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
