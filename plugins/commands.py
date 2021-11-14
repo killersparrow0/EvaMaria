@@ -20,7 +20,7 @@ async def start(client, message):
                 InlineKeyboardButton('🍿Movies Updates', url='https://t.me/Mc_Movie_updates')
             ],
             [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/Monicdreamer1234"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
