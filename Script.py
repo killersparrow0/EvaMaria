@@ -80,12 +80,12 @@ This module only works for my admins
 ★ 💬𝑻𝒐𝒕𝒂𝒍 𝒄𝒉𝒂𝒕𝒔: <code>{}</code>
 ★ 📀𝑼𝒔𝒆𝒅 𝒔𝒕𝒐𝒓𝒂𝒈𝒆: <code>{}</code> 𝑴𝒊𝑩
 ★ 🆓𝑭𝒓𝒆𝒆 𝒔𝒕𝒐𝒓𝒂𝒈𝒆: <code>{}</code> 𝑴𝒊𝑩"""
-    LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
+    LOG_TEXT_G = """#𝑵𝒆𝒘𝑮𝒓𝒐𝒖𝒑
+🏘 𝑮𝒓𝒐𝒖𝒑 = {}(<code>{}</code>)
+👬🏻 𝑻𝒐𝒕𝒂𝒍 𝑴𝒆𝒎𝒃𝒆𝒓𝒔 = <code>{}</code>
+👩🏻‍💼 𝑨𝒅𝒅𝒆𝒅 𝑩𝒚 - {}
 """
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
+    LOG_TEXT_P = """#𝑵𝒆𝒘𝑼𝒔𝒆𝒓
+🆔 𝑰𝑫 - <code>{}</code>
+💁🏻‍♂️ 𝑼𝒔𝒆𝒓𝒏𝒂𝒎𝒆 - {}
 """
