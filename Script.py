@@ -104,10 +104,3 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-SONG_TXT ="""<b>SONG MODULE</b>
-Song Download
-Song Download Module, For Those Who Love Music
-🎈 Command
-- /song [Song Name] - To Download Music
-Usage
-- working pm and groups"""
