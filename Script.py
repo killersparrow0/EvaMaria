@@ -74,14 +74,7 @@ these are the extra features of Eva Maria
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
-    SONG_TXT ="""<b>SONG MODULE</b>
-Song Download
-Song Download Module, For Those Who Love Music
-🎈 Command
-- /song [Song Name] - To Download Music
-Usage
-- working pm and groups"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
+  ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
 This module only works for my admins
@@ -97,7 +90,7 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
+STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
@@ -111,4 +104,3 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-
