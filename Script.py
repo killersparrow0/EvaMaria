@@ -104,6 +104,4 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-LOG_TXT = """
 
-"""
