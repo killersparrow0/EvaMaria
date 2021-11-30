@@ -95,14 +95,7 @@ This module only works for my admins
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
-SONG_TXT ="""<b>SONG MODULE</b>
-Song Download
-Song Download Module, For Those Who Love Music
-🎈 Command
-- /song [Song Name] - To Download Music
-Usage
-- working pm and groups"""
-    LOG_TEXT_G = """#NewGroup
+   LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
@@ -111,3 +104,10 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
+SONG_TXT ="""<b>SONG MODULE</b>
+Song Download
+Song Download Module, For Those Who Love Music
+🎈 Command
+- /song [Song Name] - To Download Music
+Usage
+- working pm and groups"""
