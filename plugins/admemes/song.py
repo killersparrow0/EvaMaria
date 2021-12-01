@@ -23,7 +23,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('💞𝑭𝒊𝒏𝒅𝒊𝒏𝒈 𝒚𝒐𝒖𝒓 𝒔𝒐𝒏𝒈🎸.....')
+    m = message.reply('💞Finding Your Song🎸.....')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -62,13 +62,13 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("𝑼𝒑𝒍𝒐𝒂𝒅𝒊𝒏𝒈🎸....𝒑𝒍𝒆𝒂𝒔𝒆 𝒘𝒂𝒊𝒕💞")
+    m.edit("Uploading🎸....Please wait💞")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎹 <b>𝑻𝒊𝒕𝒍𝒆:</b> <a href="{link}">{title}</a>\n🎙️ <b>𝑫𝒖𝒓𝒂𝒕𝒊𝒐𝒏:</b> <code>{duration}</code>\n🎵 <b>𝑽𝒊𝒆𝒘𝒔:</b> <code>{views}</code>\n🎸 <b>𝑹𝒆𝒒𝒖𝒆𝒔𝒕𝒆𝒅 𝒃𝒚:</b> {message.from_user.mention()} \n🎶 <b>𝑼𝒑𝒍𝒐𝒂𝒅𝒆𝒅 𝑩𝒚: @Monicdreamer1234 </b> 👑'
+        rep = f'🎹 <b>Title:</b> <a href="{link}">{title}</a>\n🎙️ <b>Duration:</b> <code>{duration}</code>\n🎵 <b>Views:</b> <code>{views}</code>\n🎸 <b>Requested By:</b> {message.from_user.mention()} \n🎶 <b>Uploaded by: @Movies_club_2022 </b> 👑'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
