@@ -693,6 +693,6 @@ async def advantage_spell_chok(msg):
                 )
             ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data='close_data')])
-    m = await msg.reply(f"Hey, {msg.from_user.mention}!\n𝙉𝙊 𝙍𝙀𝙎𝙐𝙇𝙏𝙎 𝙁𝙊𝙐𝙉𝘿 𝙁𝙊𝙍 {search}\n\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
+    m = await msg.reply(f"Hey, {msg.from_user.mention}!\nI couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
     await m.delete()
