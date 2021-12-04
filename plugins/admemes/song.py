@@ -47,14 +47,14 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[@Monicdreamer1234]" 
+            performer = f"[Team Mc 2022]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
 
         except Exception as e:
             print(e)
-            m.edit('**𝐈 𝐚𝐦 𝐧𝐨𝐭 𝐟𝐨𝐮𝐧𝐝 𝐫𝐞𝐬𝐮𝐥𝐭 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐫𝐞𝐪𝐮𝐞𝐬𝐭💔. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐭𝐫𝐲 𝐚𝐧𝐨𝐭𝐡𝐞𝐫 𝐬𝐨𝐧𝐠 𝐨𝐫 𝐮𝐬𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠💞!**')
+            m.edit('**No Results Found🥲, Check Ur Spelling or Try Another Song🎶!**')
             return
     except Exception as e:
         m.edit(
