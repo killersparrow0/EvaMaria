@@ -131,7 +131,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
-                InlineKeyboardButton("MORE FILES⏩", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("NEXT⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
