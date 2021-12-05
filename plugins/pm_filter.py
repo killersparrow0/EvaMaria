@@ -131,7 +131,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"🗓 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
-                InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("MORE FILES⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -439,8 +439,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Extra Mods', callback_data='extra')
             ],[
-            InlineKeyboardButton('🤡 Fun Module', callback_data='fun'),
-            InlineKeyboardButton('🎶 Song', callback_data='song')
+            InlineKeyboardButton('Fun Module', callback_data='fun'),
+            InlineKeyboardButton('Song', callback_data='song')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔮 Status', callback_data='stats')
@@ -696,7 +696,7 @@ async def advantage_spell_chok(msg):
                     callback_data=f"spolling#{user}#{k}",
                 )
             ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data='close_data')])
+    btn.append([InlineKeyboardButton(text="✗ Close ✗", callback_data='close_data')])
     m = await msg.reply(f"Hey, {msg.from_user.mention}!\nI couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
-    await m.delete()
+    await msg.delete()
