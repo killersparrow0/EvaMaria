@@ -456,8 +456,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Status', callback_data='stats'),
             InlineKeyboardButton('Source', url='https://t.me/movies_club_2022')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('Search Movies', switch_inline_query_current_chat='')
+            ],[
+            InlineKeyboardButton('« Back', callback_data='start'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
