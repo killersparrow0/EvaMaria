@@ -674,12 +674,27 @@ async def advantage_spell_chok(msg):
         await asyncio.sleep(8)
         await k.delete()
         return
+    user = msg.from_user.id if msg.from_user else 0
+    imdb_s = await get_poster(query, bulk=True)
+    movielist = [movie.get('title') for movie in imdb_s]
+    splitted = query.split()
+    if len(splitted) > 10:
+        k = await msg.reply("Are you telling the story of some movie??")
+        await asyncio.sleep(8)
+        await k.delete()
+        return
+    if len(splitted) > 1:
+        movielist += splitted
+        if len(splitted) % 2 == 0:
+            movielist += [f"{ko[1]} {splitted[ko[0] + 1]}"  for ko in enumerate(splitted) if ko[0] % 2 == 0]
+        elif splitted[:-1]:
+            movielist += [f"{ko[1]} {splitted[:-1][ko[0] + 1]}"  for ko in enumerate(splitted[:-1]) if ko[0] % 2 == 0]
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
                 InlineKeyboardButton(
-                    text=movie.strip(),
+                    text=movie,
                     callback_data=f"spolling#{user}#{k}",
                 )
             ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
+    btn.append([InlineKeyboardButton(text="Close", callback_data='close_data')])
+    await msg.reply(f'👋Hey {msg.from_user.mention}\nI cant find anything related to that\nDid you mean any one of these?', reply_markup=InlineKeyboardMarkup(btn))
